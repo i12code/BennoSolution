@@ -1,0 +1,25 @@
+﻿@page "/NewPost"
+@inject UploadManager UploadManager
+@using BenoSolution.Pages
+@using BenoSolution.Shared
+
+<EditForm Model="_model">
+    <InputText @bind-Value="_model.Name" class="form-control" />
+    <InputFile OnChange="UploadFile" />
+</EditForm>
+
+<UploadManagerView />
+
+@code {
+
+    public FileModel _model { get; set; } = new FileModel();
+
+    private void UploadFile(InputFileChangeEventArgs args)
+    {
+        // to make the demo easier, we assume that only one file is uploaded at a time
+        if (args.FileCount > 1) { return; }
+
+        UploadManager.StartFileUpload(args.File.OpenReadStream(5000000), args.File.Name, args.File.Size);
+    }
+
+}

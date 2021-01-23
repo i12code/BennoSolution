@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BenoSolution", "BenoSolution.csproj", "{5B86E672-ED2E-42C6-8E5B-748AD58C45D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VimeoApi.Net", "..\..\..\Documents\signradar\SignRadarV3\SignRadarV3-master\VimeoAPIWithName\VimeoAPI.NET\VimeoApi.Net\VimeoApi.Net.csproj", "{63612E9A-2661-46C2-9060-8656E26C9D06}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B86E672-ED2E-42C6-8E5B-748AD58C45D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B86E672-ED2E-42C6-8E5B-748AD58C45D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B86E672-ED2E-42C6-8E5B-748AD58C45D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B86E672-ED2E-42C6-8E5B-748AD58C45D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63612E9A-2661-46C2-9060-8656E26C9D06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63612E9A-2661-46C2-9060-8656E26C9D06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63612E9A-2661-46C2-9060-8656E26C9D06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63612E9A-2661-46C2-9060-8656E26C9D06}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AF7E15EC-DE20-4FA5-8FD5-F5236458AA23}
+	EndGlobalSection
+EndGlobal

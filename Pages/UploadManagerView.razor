@@ -1,0 +1,30 @@
+﻿@inject UploadManager UploadManager
+@implements IDisposable
+
+
+<h3>Uploads</h3>
+<ul>
+    @foreach (var item in UploadManager.Transfers)
+    {
+        <li><span>@item.Filename</span> @(Math.Round( (100.0 * item.BytesSent / item.TotalSize),2 )) %</li>
+    }
+</ul>
+
+@code {
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        UploadManager.FileTransferChanged += TransferProgressChanged;
+    }
+
+    private async void TransferProgressChanged(Object sender, FileTransferingProgressChangedEventArgs args)
+    {
+        await InvokeAsync(StateHasChanged);
+    }
+
+    public void Dispose()
+    {
+        UploadManager.FileTransferChanged -= TransferProgressChanged;
+    }
+}
